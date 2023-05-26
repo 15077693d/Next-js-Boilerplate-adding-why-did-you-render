@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 
+import Header from '@/components/header';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
@@ -15,6 +16,7 @@ const Index = () => {
         />
       }
     >
+      <Header />
       <a href="https://github.com/ixartz/Next-js-Boilerplate">
         <img
           src={`${router.basePath}/assets/images/nextjs-starter-banner.png`}
